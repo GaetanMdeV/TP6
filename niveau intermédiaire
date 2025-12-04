@@ -1,1 +1,23 @@
-
+def semestre2(nb_mois,num_mois1):
+  annee=["Janvier","Février","Mars","Avril","Mai","Juin","Juillet","Août","Septembre","Octobre","Novembre","Décembre"]
+  p=0
+  if 1<=nb_mois<=12:
+    if num_mois1+nb_mois<=12:
+      if num_mois1==2:
+        val=28
+      else:
+        val=30
+      semestre2={annee[num_mois1-1]: 31 if (num_mois1%2!=0) else val}
+      for i in range(num-mois1,nb_mois+1):
+        if num_mois1==2:
+          val=28
+        elif num_mois1%2!=0:
+          val=31
+        else :
+          val=30
+        semestre[annee[i-1]]=val
+    else:
+      print("Le semestre ne se fait que sur une seule année")
+      p=1
+  elif p==0:
+      print("Le semestre ne se fait que sur une seule année")
